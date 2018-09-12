@@ -11,8 +11,9 @@
         <h1>Service Worker Test</h1>
     </header>
     <main>
-        <h2>Inhalte</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam mollitia repudiandae dolorem veritatis inventore, velit odio perferendis hic. Architecto, repellendus dolores. Earum iure repellendus provident sint totam, quis exercitationem sapiente a illum soluta blanditiis doloribus quae rerum quo reprehenderit amet repudiandae, fugiat quam itaque. Facere distinctio assumenda beatae doloribus pariatur.</p>
+        <h2>Offline Seite anzeigen</h2>
+        <p>Der ServiceWorker cached beim Aufruf von index.html die Seite offline.html. Besteht beim erneuten öffnen / neuladen der Seite keine Verbindung, wird offline.html angezeigt.</p>
+        <p>Offline.html versucht alle 5 Sekunden, die Seite neu zu laden. Sobald wieder eine Verbindung besteht, wird wieder der Inhalt von index.html angezeigt.</p>
     </main>
     <script src="js/main.js"></script>
 </body>
